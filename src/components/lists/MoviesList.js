@@ -4,7 +4,7 @@ import { IMG } from '../../config/apiConfig'
 
 const MoviesList = props => {
   const { navigation, movies, type } = props
-  // console.log('type of movie list', type)
+  console.log('type of movie list', type)
 
   function getTypeReleaseDate(item, type) {
     if (type === "movie") {

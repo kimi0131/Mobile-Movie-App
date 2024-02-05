@@ -60,7 +60,7 @@ const SearchScreen = ({ navigation, route }) => {
                 <View>
                     <MoviesList
                         movies={search}
-                        // type={type} 
+                        type={dropmenu} 
                         navigation={navigation}
                     />
                 </View>
