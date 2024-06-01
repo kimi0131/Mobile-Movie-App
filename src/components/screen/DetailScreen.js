@@ -8,11 +8,14 @@ import { ScrollView, StyleSheet, Image } from "react-native"
 import { Text } from "react-native-paper"
 import { useState, useEffect } from "react"
 import getDetail from "../../services/detailApi"
-import { IMG } from "../../config/apiConfig"
+import { REACT_APP_IMG } from "@env"
+// import { IMG } from "../../config/apiConfig"
 
 
 const DetailScreen = ({ route }) => {
     const { id, type } = route.params
+    console.log("this is IMG -> ", REACT_APP_IMG)
+    const IMG = REACT_APP_IMG
     // console.log('type -> ', type)
     // console.log('id -> ', id)
     const [detail, setDetail] = useState("")

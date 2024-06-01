@@ -1,10 +1,13 @@
 import { FlatList } from 'react-native'
 import MovieTVCard from '../listItems/MovieTvCard'
-import { IMG } from '../../config/apiConfig'
+import { REACT_APP_IMG } from "@env"
+// import { IMG } from '../../config/apiConfig'
 
 const MoviesList = props => {
   const { navigation, movies, type } = props
   console.log('type of movie list', type)
+
+  const IMG = REACT_APP_IMG
 
   // function getTypeReleaseDate(item, type) {
   //   if (type === "movie") {

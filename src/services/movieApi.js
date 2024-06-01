@@ -1,17 +1,20 @@
-import { API_KEY, BASE_URL } from "../config/apiConfig";
 import qs from 'qs'
+import { REACT_APP_API_KEY } from "@env"
+
 
 const getMovies = async (type, dropmenu) => {
-    const baseURL = BASE_URL
+    const baseURL = "https://api.themoviedb.org/3"
+    const apiKey = REACT_APP_API_KEY
+
 
     // console.log('type from movieAPI -> ', type)
 
     const queryParams = {
         language: 'en-US',
         page: 1,
-        api_key: API_KEY,
+        api_key: apiKey
     };
-    // console.log('queryParams ->', queryParams)
+    console.log('queryParams ->', REACT_APP_API_KEY)
 
     let dynamicParams = {};
     if (type && dropmenu) {
