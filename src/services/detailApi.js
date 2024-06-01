@@ -4,6 +4,9 @@ import qs from 'qs'
 const getDetail = async (type, id) => {
     const baseURL = BASE_URL
 
+    console.log('type from detailAPI', type)
+    
+
     // console.log('type from detailApi -> ', type)
 
     const queryParams = {
