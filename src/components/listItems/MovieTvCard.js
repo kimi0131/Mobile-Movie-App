@@ -31,7 +31,7 @@ const MovieTVCard = props => {
                             <View >
                                 <Card.Actions>
                                     <Button style={cardStyle.button} mode='contained-tonal' buttonColor='deepskyblue' textColor='white' onPress={() => {
-                                        navigation.navigate('Details', { id, type, title })
+                                        navigation.navigate('Details', { id, type} )
                                     }}>More Details</Button>
                                 </Card.Actions>
                             </View>
